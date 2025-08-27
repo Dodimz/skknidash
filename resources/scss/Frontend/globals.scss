@@ -1,0 +1,59 @@
+/* Plugins */
+@import "../../css/frontend/bootstrap.min.css";
+@import "../../css/frontend/swiper.min.css";
+
+/* Custom CSS */
+@import "default/variable";
+@import "default/typography";
+@import "common/preloader";
+@import "common/spacing";
+@import "common/ecommerce";
+@import "common/general";
+@import "common/slider";
+@import "common/video-modal";
+@import "common/footer";
+@import "common/sidebar";
+@import "common/header";
+@import "shortcode/hero";
+@import "shortcode/banner";
+@import "shortcode/iconbox";
+@import "shortcode/post";
+@import "shortcode/cta";
+@import "shortcode/testimonial";
+@import "shortcode/counter";
+@import "shortcode/casestudie";
+@import "shortcode/team";
+@import "shortcode/imagebox";
+@import "shortcode/pricing";
+@import "shortcode/card";
+@import "shortcode/landing";
+@import "shortcode/extension";
+@import "shortcode/emptyStock";
+@import "rtl";
+
+.booking-success-icon div {
+    width: 250px;
+    margin: 0 auto;
+}
+.booking-card {
+    border: none;
+}
+.booking-btn-custom {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+.booking-btn-custom:hover {
+    background-color: #218838;
+    color: #ffffff;
+}
+
+.quick-login-link .cs_btn.cs_style_1 {
+    background-color: transparent;
+    border: 1px solid var(--ternary);
+    color: var(--primary);
+    padding: 11px 30px;
+}
+.quick-login-link .cs_btn.cs_style_1:hover {
+    color: #fff;
+}

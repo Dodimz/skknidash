@@ -1,0 +1,31 @@
+.single-theme-list .theme-wrap {
+  border: 1px solid #e5e5e5;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.single-theme-list .theme-wrap img {
+  width: 100%;
+}
+.single-theme-list .theme-wrap .theme-bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0px 10px;
+  background: #fff;
+}
+.single-theme-list .theme-wrap .theme-bottom-bar .theme-name {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.theme-action-button button {
+  padding: 2px 10px;
+}
+.theme-action-button a {
+  padding: 2px 10px;
+}/*# sourceMappingURL=style.css.map */

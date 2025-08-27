@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Resources\Admin;
+
+use App\Models\Setting;
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\ResourceCollection;
+
+class PostMenuResource extends ResourceCollection
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        $result = [];
+        $languages = json_decode(Setting::pull('languages'), true);
+
+        foreach ($languages as $lang) {
+            $result[$lang['code']] = [];
+        }
+
+        foreach ($this->collection as $blog) {
+            foreach ($blog->contents as $content) {
+                $language = $content->language_code;
+                if (! isset($result[$language])) {
+                    $result[$language] = [];
+                }
+                $result[$language][] = [
+                    'name' => $content->title,
+                    'url' => route('blog.show', $blog->slug),
+                    'type' => 'Posts',
+                ];
+            }
+        }
+
+        return $result;
+    }
+}

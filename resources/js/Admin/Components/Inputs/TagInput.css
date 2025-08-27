@@ -1,0 +1,50 @@
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-item {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.remove-tag-button {
+    cursor: pointer;
+    color: #ea0000;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    font-size: 14px;
+    color: #333;
+}
+.tag-container > div {
+    display: flex;
+}
+
+.search-spinner {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+.search-spinner .spinner-crescent {
+    width: 20px;
+}
+
+.tags-options-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    z-index: 100;
+}

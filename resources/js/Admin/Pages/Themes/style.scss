@@ -1,0 +1,35 @@
+.single-theme-list {
+    .theme-wrap {
+        border: 1px solid #e5e5e5;
+        position: relative;
+        border-radius: 7px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        .theme-bottom-bar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            padding: 0px 10px;
+            background: #fff;
+            .theme-name {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.theme-action-button {
+    button {
+        padding: 2px 10px;
+    }
+    a {
+        padding: 2px 10px;
+    }
+}

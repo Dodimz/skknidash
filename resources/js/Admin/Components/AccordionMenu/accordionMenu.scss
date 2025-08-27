@@ -1,0 +1,50 @@
+.accordion-menu {
+    h2 {
+        font-size: 1.3em;
+    }
+    .list-group {
+        .list-group-item {
+            border-color: #c3c4c7;
+            padding: 0;
+            &.show {
+                .list-group-content {
+                    display: block;
+                }
+                .list-group-heading {
+                    background: #f6f7f7;
+                }
+            }
+            .list-group-heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 20px;
+                cursor: pointer;
+                &:hover {
+                    background: #f6f7f7;
+                }
+            }
+            .list-group-content {
+                display: none;
+                padding: 12px 20px;
+                background: #ffffff;
+                color: #3c434a;
+                .list-group-content-item {
+                    padding: 10px;
+                    border: 1px solid #dcdcde;
+                    max-height: 200px;
+                    overflow: auto;
+                }
+            }
+            .list-group-content-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                button {
+                    padding: 5px 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
